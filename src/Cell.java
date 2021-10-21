@@ -1,22 +1,9 @@
-public class Cell implements Cellular {
-    private int r;
-    private int c;
+public class Cell extends CellReference {
     private Player player;
     private boolean blocked;
 
     public Cell(int r, int c) {
-        this.r = r;
-        this.c = c;
-    }
-
-    @Override
-    public int getR() {
-        return r;
-    }
-
-    @Override
-    public int getC() {
-        return c;
+        super(r, c);
     }
 
     public boolean isBlocked() {
